@@ -1,14 +1,24 @@
+import {AnyAction} from "redux";
+
 const initState = {
     themeId: 1,
 }
 
-export const themeReducer = (state = initState, action: any): any => { // fix any
-    switch (action.type) {
-        // дописать
+type StateType = typeof initState
 
+
+export const themeReducer = (state: StateType = initState, action: ActionType): StateType => {
+    switch (action.type) {
+        case "SET_THEME_ID":
+            return {themeId: action.id}
         default:
             return state
     }
 }
 
-export const changeThemeId = (id: number): any => ({ type: 'SET_THEME_ID', id }) // fix any
+
+type ActionType = ReturnType<typeof changeThemeId>
+
+export const changeThemeId = (id: number): AnyAction => ({ type: 'SET_THEME_ID', id })
+
+

@@ -28,7 +28,6 @@ function HW11() {
                             id={"hw11-single-slider"}
                             value={value1}
                             onChange={change}
-
                         />
                     </div>
                     <div className={s.wrapper}>
