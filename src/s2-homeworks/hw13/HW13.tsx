@@ -110,6 +110,7 @@ const HW13 = () => {
                     </div>
                 </div>
             </div>
+            <hr/>
         </div>
     )
 }
