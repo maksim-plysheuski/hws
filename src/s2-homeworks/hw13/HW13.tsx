@@ -28,13 +28,15 @@ const HW13 = () => {
 
         axios.post(url, {success: x})
             .then((res) => {
+                console.log(res)
                 setCode('Код 200!')
                 setImage(success200)
-                setText(res.data?.errorText ? '' : '')
+                setText(res.data?.errorText)
                 setInfo(res.data?.info)
 
             })
             .catch((e) => {
+
                 const errStatus = e.response.status
                 setCode(errStatus ? `Ошибка ${errStatus}!` : 'Error!')
                 setImage(errStatus === 500 ? error500 : errStatus === 400 ? error400 : errorUnknown)
