@@ -3,9 +3,20 @@
 }
 
 .hw {
-
+    height: 336px;
+    border-top: 1px solid #D9D9D9  ;
+    border-bottom: 1px solid #D9D9D9  ;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 0 auto;
 }
 
 .hwTitle {
-
+    margin: 47px 0 10px 70px;
+    height: 27px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
 }

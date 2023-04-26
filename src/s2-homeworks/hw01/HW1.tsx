@@ -4,9 +4,10 @@ import MessageSender from './message-sender/MessageSender'
 import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
+import s from './HW1.module.css'
 
 /*
-* 1 - описать тип MessageType
+* 1 - описать тип MessageType +
 * 2 - описать тип MessagePropsType в файле Message.tsx
 * 3 - в файле Message.tsx отобразить приходящие данные
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
@@ -25,10 +26,10 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'User Name',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
+        text: 'user message text', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -39,7 +40,7 @@ export const friendMessage0: MessageType = {
         name: 'Friend Name', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        text: 'friends message text', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -50,7 +51,7 @@ const HW1 = () => {
             <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
                 {/*проверка отображения (не менять)*/}
-                <div>
+                <div className={s.container}>
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>
