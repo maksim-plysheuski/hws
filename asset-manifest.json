@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/maksim-plysheuski/hws/static/css/main.d6f2b95d.css",
+    "main.js": "/maksim-plysheuski/hws/static/js/main.cba0eb0e.js",
+    "static/js/787.66cb4309.chunk.js": "/maksim-plysheuski/hws/static/js/787.66cb4309.chunk.js",
+    "static/media/avatar.png": "/maksim-plysheuski/hws/static/media/avatar.d947cb9d0d13765666b6.png",
+    "index.html": "/maksim-plysheuski/hws/index.html",
+    "main.d6f2b95d.css.map": "/maksim-plysheuski/hws/static/css/main.d6f2b95d.css.map",
+    "main.cba0eb0e.js.map": "/maksim-plysheuski/hws/static/js/main.cba0eb0e.js.map",
+    "787.66cb4309.chunk.js.map": "/maksim-plysheuski/hws/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6f2b95d.css",
+    "static/js/main.cba0eb0e.js"
+  ]
+}
