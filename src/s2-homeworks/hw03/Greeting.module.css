@@ -2,15 +2,36 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
 }
 
 .error {
+    width: 165px;
+    height: 17px;
+    left: 70px;
+    top: 267px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
     color: red;
+    padding-top: 7px;
 }
 
 .input {
-
-
+    height: 36px;
+    width: 372px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 1);
+    padding: 8px 0 8px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .input:focus {
@@ -19,9 +40,32 @@
 
 .errorInput {
     border: 1px solid red;
+    height: 36px;
+    width: 372px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
 }
 
 .button {
+    height: 36px;
+    width: 78px;
+    left: 454px;
+    top: 1024px;
+    border-radius: 3px;
+    padding: 5px 24px 5px 24px;
+    background: rgba(0, 102, 204, 0.5);
+    margin-left: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .button:focus {
@@ -34,7 +78,23 @@
 }
 
 .text {
+    width: 143px;
+    height: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    opacity: 50%;
 }
 
 .greeting {
+    padding-top: 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }

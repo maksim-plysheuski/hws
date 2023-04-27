@@ -24,7 +24,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     }
 ) => {
-    const inputClass = error ? s.errorInput : ""
+    const inputClass = error ? s.errorInput : s.input
 
     return (
         <div id={"hw3-form"} className={s.greetingForm}>
@@ -56,7 +56,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     className={s.button}
                     disabled={!name.trim()}
                 >
-                    add
+                    Add
                 </button>
             </div>
 
