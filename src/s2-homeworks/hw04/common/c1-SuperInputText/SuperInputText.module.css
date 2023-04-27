@@ -2,19 +2,50 @@
 }
 
 .input {
+    height: 36px;
+    width: 372px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 1);
+    padding: 8px 0 8px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
 }
 
 .errorInput {
+    border: 1px solid red;
+    height: 36px;
+    width: 372px;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    width: 165px;
+    height: 17px;
+    left: 70px;
+    top: 267px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: red;
+    margin-bottom: 5px;
 }

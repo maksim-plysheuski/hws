@@ -1,16 +1,59 @@
 .button {
+    height: 50px;
 }
 
 .disabled {
+    padding: 5px 24px;
+    gap: 10px;
+    border: none;
+    width: 132px;
+    height: 30px;
+    left: 574px;
+    top: 1465px;
+    background: rgba(0, 77, 153);
+    opacity: 30%;
+    border-radius: 3px;
+    color: black;
 }
 
 .secondary {
+    padding: 5px 24px;
+    gap: 10px;
+    border: 1px rgba(0, 102, 204) solid;
+    background-color: white;
+    width: 132px;
+    height: 30px;
+    left: 574px;
+    top: 1465px;
+    border-radius: 3px;
 }
 
 .default {
+    padding: 5px 24px;
+    gap: 10px;
+    border: none;
+    width: 132px;
+    height: 30px;
+    left: 574px;
+    top: 1465px;
+    background: rgba(0, 102, 204);
+    opacity: 90%;
+    border-radius: 3px;
+    color: white;
 }
 
 .red {
+    padding: 5px 24px;
+    gap: 10px;
+    border: none;
+    width: 132px;
+    height: 30px;
+    left: 574px;
+    top: 1465px;
+    background: #cc0000;
+    opacity: 90%;
+    border-radius: 3px;
+    color: white;
 }
 
 .default:hover {
