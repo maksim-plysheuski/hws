@@ -1,80 +1,86 @@
 .button {
-    height: 50px;
-    margin-right: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 24px;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 132px;
+    height: 30px;
+
+    /* Primary/100 */
+    background: #0066CC;
+    border-radius: 3px;
+    border: 1px solid #0066CC;
+
 }
 
 .disabled {
-    padding: 5px 24px;
-    gap: 10px;
-    border: none;
-    width: 132px;
-    height: 30px;
-    left: 574px;
-    top: 1465px;
-    background: rgba(0, 77, 153);
-    opacity: 30%;
+    background: #004D99;
+    opacity: 0.5;
     border-radius: 3px;
-    color: black;
 }
 
 .secondary {
-    padding: 5px 24px;
-    gap: 10px;
-    border: 1px rgba(0, 102, 204) solid;
-    background-color: white;
-    width: 132px;
-    height: 30px;
-    left: 574px;
-    top: 1465px;
-    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #004D99;
+    color: #0066CC;
+
 }
 
 .default {
-    padding: 5px 24px;
-    gap: 10px;
-    border: none;
-    width: 132px;
-    height: 30px;
-    left: 574px;
-    top: 1465px;
-    background: rgba(0, 102, 204);
-    opacity: 90%;
+    background: #0066CC;
     border-radius: 3px;
-    color: white;
+    border: 1px solid #0066CC;
 }
 
 .red {
-    padding: 5px 24px;
-    gap: 10px;
-    border: none;
-    width: 132px;
-    height: 30px;
-    left: 574px;
-    top: 1465px;
-    background: #cc0000;
-    opacity: 90%;
+    background: #CC1439;
     border-radius: 3px;
-    color: white;
+    border: 1px solid #CC1439;
 }
 
 .default:hover {
+    background: #0080FF;
+    border-radius: 3px;
 }
 
 .red:hover {
+    background: #FF1A47;
+    border-radius: 3px;
 }
 
 .secondary:hover {
+    background: #E5F0FA;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 
 .default:active {
+    background: #0059B3;
+    border-radius: 3px;
 }
 
 .secondary:active {
+    background: #C9E5FF;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 .red:active {
+    background: #B31232;
+    border-radius: 3px;
 }
 
 .button:disabled {
+    background: #004D99;
+    opacity: 0.5;
+    border-radius: 3px;
 }
