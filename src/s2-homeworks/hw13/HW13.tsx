@@ -34,16 +34,22 @@ const HW13 = () => {
                 setText(res.data?.errorText)
                 setInfo(res.data?.info)
 
+
             })
             .catch((e) => {
-
-                const errStatus = e.response.status
-                setCode(errStatus ? `Ошибка ${errStatus}!` : 'Error!')
-                setImage(errStatus === 500 ? error500 : errStatus === 400 ? error400 : errorUnknown)
-                if (errStatus) {
-                    setText(e.response.data.errorTexte)
+                if(e.response.status === 500) {
+                    setCode(`Ошибка ${e.response.status}!`)
+                    setImage(error500)
+                    setText(e.response.data.errorText)
+                    setInfo(e.response.data.info)
+                } else if (e.response.status === 400) {
+                    setCode(`Ошибка ${e.response.status}!`)
+                    setImage(error400)
+                    setText(e.response.data.errorText)
                     setInfo(e.response.data.info)
                 } else {
+                    setCode(`Error!`)
+                    setImage(errorUnknown)
                     setText(e.message)
                     setInfo(e.name)
                 }
