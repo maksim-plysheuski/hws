@@ -33,13 +33,12 @@ const HW14 = () => {
 
     const onChangeText = (value: string) => {
         setFind(value)
-        setSearchParams({"myQueryParams": value})
+        setSearchParams({value})
 
     }
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
-
         sendQuery(params.find || "")
         setFind(params.find || "")
     }, [])
